@@ -2,6 +2,10 @@
 
 The first version contains only the Home/About page. The approved future plan and assignment checklist are in [PLAN.md](PLAN.md).
 
+Live site: https://thatpie.github.io/matteo-botelho-flute/
+
+Repository: https://github.com/ThatPie/matteo-botelho-flute
+
 ## Files
 
 - `docs/index.html`: page structure and Matteo's unchanged biography.
@@ -35,3 +39,9 @@ Then visit http://127.0.0.1:8080. Press Ctrl+C in the terminal when finished.
 Matteo supplied and selected the headshot. His biography wording is preserved from the brief; paragraph breaks are added for readability. The palette is #0E0E52, #3993DD, and #FCFCFC. Headings use Crimson Text; body text uses PT Serif. All fonts load locally.
 
 The home navigation works now. Performances and Contact will be added to the header when those pages are built.
+
+## Publishing
+
+GitHub Pages is configured to publish the `docs/` folder from `main`. Updating website files in that folder and saving the changes to GitHub triggers publication. The rest of this repository stores the plan and instructions.
+
+The live Home/About page was checked on desktop and at 390px and 320px phone widths. Its navigation, portrait, local fonts, and biography were verified.
