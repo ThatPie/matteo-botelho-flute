@@ -70,4 +70,5 @@ Approved by Matteo on October 14, 2026. This file records the decisions and rema
 - Source review confirmed matching biography wording and existing asset paths. Fixed the name link to point to index.html so double-click previews also work.
 - Browser checks passed for desktop, 390px and 320px: portrait loads, phone layout stacks, no horizontal overflow, keyboard focus is visible, and the skip link reaches the main content. No browser errors or warnings were observed. JavaScript syntax check passed.
 - Future content and the signature element remain pending Matteo's input.
-- Matteo chose a new public GitHub repository named matteo-botelho-flute under ThatPie. Repository created at https://github.com/ThatPie/matteo-botelho-flute. GitHub Pages will publish docs/ from main; the local Home/About page is complete and previewable.
+- Matteo chose a new public GitHub repository named matteo-botelho-flute under ThatPie: https://github.com/ThatPie/matteo-botelho-flute.
+- Home/About is live at https://thatpie.github.io/matteo-botelho-flute/. GitHub Pages publishes docs/ from main. Desktop, 390px and 320px live-page checks passed; the portrait and fonts load, and both navigation links work. All 14 uploaded files matched the local files byte for byte. Stage 1 is complete; Performances and Contact remain future work.
