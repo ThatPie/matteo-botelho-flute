@@ -20,7 +20,7 @@ Approved by Matteo on October 14, 2026. This file records the decisions and rema
 
 ## Stage 1: Home/About only
 
-- Header with Matteo's name and working Home/About navigation.
+- Header with Matteo's name and working navigation labeled "Home" (updated at Matteo's request on October 18).
 - Selected portrait on the left; full existing biography on the right on desktop.
 - Photo and biography stack vertically on phones.
 - Add Performances and Contact links when their pages exist.
