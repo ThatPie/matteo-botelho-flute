@@ -106,14 +106,26 @@ a:focus-visible {
   color: var(--blue);
 }
 
+.header-inner nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+}
+
 .nav-link {
   display: inline-block;
   padding: 0.75rem 0;
   font-size: 0.875rem;
   line-height: 1.4;
+  text-decoration-line: none;
   text-decoration-color: var(--blue);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.55rem;
+}
+
+.nav-link[aria-current="page"],
+.nav-link:hover {
+  text-decoration-line: underline;
 }
 
 .nav-link:hover {
@@ -184,6 +196,194 @@ h1 {
   margin-bottom: 0;
 }
 
+.performances {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5.5rem) 3rem 1.5rem;
+}
+
+.performances-intro {
+  padding-bottom: 1.5rem;
+}
+
+.performance {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  border-top: 1px solid var(--line);
+  padding: 3rem 0;
+}
+
+.performance-media {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  background: #eeeef4;
+}
+
+.performance-media iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.performance-content {
+  min-width: 0;
+}
+
+.performance-content .eyebrow {
+  margin-bottom: 0.65rem;
+}
+
+.performance h2 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+.movement {
+  margin: 0.6rem 0 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.performance-meta {
+  margin: 1.25rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+.performance-description {
+  margin: 1rem 0 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+.video-link {
+  display: inline-block;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-decoration-color: var(--blue);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.35rem;
+}
+
+.video-link:hover {
+  text-decoration-color: var(--navy);
+}
+
+.video-link span {
+  margin-left: 0.35rem;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.contact {
+  flex: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5.5rem) 3rem 5rem;
+}
+
+.contact-intro {
+  margin-bottom: 3.5rem;
+}
+
+.contact-intro > p:last-child {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.contact-sections {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: clamp(3rem, 7vw, 6rem);
+}
+
+.contact-section {
+  min-width: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+}
+
+.contact-section h2 {
+  margin: 0 0 1.5rem;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.contact-emails,
+.contact-emails dd,
+.contact-socials {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-emails > div + div {
+  margin-top: 1.75rem;
+}
+
+.contact-emails dt {
+  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.contact-socials {
+  list-style: none;
+}
+
+.contact-socials li + li {
+  margin-top: 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+  text-decoration-color: var(--blue);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3rem;
+}
+
+.contact-link > span:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-link > span[aria-hidden] {
+  flex-shrink: 0;
+  color: var(--blue);
+}
+
+.contact-link:hover {
+  text-decoration-color: var(--navy);
+}
+
+.contact-page .site-footer {
+  width: calc(100% - 6rem);
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -213,6 +413,7 @@ h1 {
 
 @media (max-width: 760px) {
   .header-inner {
+    flex-wrap: wrap;
     padding: 1.2rem 1.5rem;
   }
 
@@ -237,6 +438,39 @@ h1 {
 
   .title-rule {
     margin: 1.3rem 0 1.5rem;
+  }
+
+  .performances {
+    max-width: 580px;
+    padding: 2.5rem 1.5rem 0.5rem;
+  }
+
+  .performances-intro {
+    padding-bottom: 0.75rem;
+  }
+
+  .performance {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 0 2.5rem;
+  }
+
+  .contact {
+    max-width: 580px;
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+
+  .contact-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-sections {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-page .site-footer {
+    width: calc(100% - 3rem);
   }
 
   .site-footer {
