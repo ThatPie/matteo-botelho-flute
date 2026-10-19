@@ -1,10 +1,13 @@
 # Matteo Botelho's flute portfolio
 
-The portfolio contains Home, Performances, and Contact pages. All three performance videos are included, with dates and credits from their descriptions and Matteo's approved wording. The approved plan and assignment checklist are in [PLAN.md](PLAN.md).
+The portfolio contains Home, Performances, Beyond the Flute, and Contact pages. Three flute performance videos and one vocal performance are included, with dates and credits from their descriptions and Matteo's approved wording. The approved plan and assignment checklist are in [PLAN.md](PLAN.md).
+
+Beyond the Flute begins with Matteo singing “Wondering” and will expand as he supplies more videos.
 
 Live site: https://matteobotelho.com/
 
 - Performances: https://matteobotelho.com/performances.html
+- Beyond the Flute: https://matteobotelho.com/beyond-the-flute.html
 - Contact: https://matteobotelho.com/contact.html
 
 Repository: https://github.com/ThatPie/matteo-botelho-flute
@@ -14,6 +17,7 @@ Repository: https://github.com/ThatPie/matteo-botelho-flute
 - `docs/index.html`: page structure and Matteo's unchanged biography.
 - `docs/performances.html`: solo and chamber performance videos, dates, and credits.
 - `docs/contact.html`: both email addresses plus LinkedIn, YouTube, and Instagram.
+- `docs/beyond-the-flute.html`: theater and vocal performances, currently one video.
 - `docs/styles.css`: typography, colors, desktop and phone layout.
 - `docs/script.js`: keeps the copyright year current.
 - `docs/assets/`: selected headshot and locally hosted fonts with their licenses.
@@ -35,6 +39,8 @@ Performances is at http://127.0.0.1:8080/performances.html while the local serve
 
 Contact is at http://127.0.0.1:8080/contact.html, or open `docs/contact.html` directly.
 
+Beyond the Flute is at http://127.0.0.1:8080/beyond-the-flute.html while the local server is running. Use the server for YouTube playback.
+
 ## Check phone width in Chrome
 
 1. Open the page and choose View > Developer > Developer Tools, or press Option+Command+I on Mac.
@@ -47,10 +53,10 @@ Contact is at http://127.0.0.1:8080/contact.html, or open `docs/contact.html` di
 
 Matteo supplied and selected the headshot. His biography wording is preserved from the brief; paragraph breaks are added for readability. The palette is #0E0E52, #3993DD, and #FCFCFC. Headings use Crimson Text; body text uses PT Serif. All fonts load locally.
 
-The header links Home, Performances, and Contact. Contact includes five ordinary links, with no backend or form.
+The header links Home, Performances, Beyond the Flute, and Contact. Its navigation uses two columns at phone widths. Contact includes five ordinary links, with no backend or form.
 
 ## Publishing
 
 GitHub Pages is configured to publish the `docs/` folder from `main`. Updating website files in that folder and saving the changes to GitHub triggers publication. The rest of this repository stores the plan and instructions.
 
-Before publication, the three pages were checked in the local browser on desktop and at 390px and 320px phone widths. Navigation, portrait, local fonts, keyboard focus, video playback, and contact destinations were verified.
+Before publication, the pages were checked in the local browser on desktop and at 390px and 320px phone widths. Navigation, portrait, local fonts, keyboard focus, video playback, and contact destinations were verified. Beyond the Flute was also checked at 820px for header wrapping.

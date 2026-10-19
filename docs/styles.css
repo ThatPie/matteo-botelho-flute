@@ -114,6 +114,7 @@ a:focus-visible {
 
 .nav-link {
   display: inline-block;
+  white-space: nowrap;
   padding: 0.75rem 0;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -284,10 +285,16 @@ h1 {
   margin-left: 0.35rem;
 }
 
-.contact-page {
+.contact-page,
+.beyond-page {
   display: flex;
   flex-direction: column;
   min-height: 100svh;
+}
+
+.beyond-page .performances {
+  flex: 1;
+  width: 100%;
 }
 
 .contact {
@@ -380,7 +387,8 @@ h1 {
   text-decoration-color: var(--navy);
 }
 
-.contact-page .site-footer {
+.contact-page .site-footer,
+.beyond-page .site-footer {
   width: calc(100% - 6rem);
 }
 
@@ -469,13 +477,23 @@ h1 {
     gap: 2.5rem;
   }
 
-  .contact-page .site-footer {
+  .contact-page .site-footer,
+  .beyond-page .site-footer {
     width: calc(100% - 3rem);
   }
 
   .site-footer {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 0 1.75rem;
+    width: 100%;
   }
 }
 

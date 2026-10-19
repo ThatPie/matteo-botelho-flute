@@ -9,7 +9,7 @@ Approved by Matteo on October 14, 2026. This file records the decisions and rema
 - Plain HTML, CSS, and JavaScript; static hosting with no backend, login, or database.
 - Multiple pages are preferred and permitted by the assignment.
 - Three core pages: Home/About, Performances, Contact.
-- Optional later page: Beyond the Flute, for singing, theater, and other creative work.
+- Fourth page: Beyond the Flute, for theater and vocal performances. Matteo reviewed the draft and approved committing and publishing it on October 18.
 - Palette: navy #0E0E52, blue #3993DD, off-white #FCFCFC.
 - Crimson Text for headings; PT Serif for body text. Use the local font files with their OFL licenses.
 - Use only photo assets/Headshots/769a59d5-483d-42da-ad4d-9bfe3cc879c0.jpg for the initial build. Matteo selected it explicitly; it supersedes the brief's earlier flute-photo idea.
@@ -68,12 +68,22 @@ Matteo reviewed all three recordings and their descriptions. Preserve his final 
 - Use email links; no backend contact form.
 - Contact uses Email and Connect sections, the existing fonts and palette, and Contact navigation on all three pages. Matteo removed the “Get in touch” eyebrow above the heading and approved publication on October 18.
 
+## Stage 4: Beyond the Flute
+
+- Page title: Beyond the Flute. Begin with one video; add more only when Matteo supplies them.
+- “Wondering” from The Bridges of Madison County: https://youtu.be/06h9tx6xe78
+- Performers: Matteo Botelho, voice; Kate Flock, piano.
+- Occasion: Newark High School's annual Prism Concert, April 20, 2026. Date, occasion, and credits confirmed in the video description.
+- Music and lyrics by Jason Robert Brown, confirmed by the official show page: https://www.mtishows.com/the-bridges-of-madison-county.
+- Reuse the existing performance layout, fonts, and palette. Four-page navigation order: Home, Performances, Beyond the Flute, Contact. Use two navigation columns on phones so labels stay readable.
+- Matteo reviewed the local preview, removed the “Theater & voice” eyebrow above the heading, and approved committing and publishing the page on October 18.
+
 ## Remaining assignment deliverables
 
 - 100–150-word About/Home introduction, in Matteo's voice. Existing bio fits.
 - Three or more work items; skills and interests represented; Contact.
 - Visible palette, two selected fonts, design adjectives, and a final signature element.
-- Clarify the signature element with Matteo. Beyond the Flute is a possible direction, not a final decision.
+- Review the final signature element with Matteo. Beyond the Flute has now been selected as a page.
 - Photograph a paper homepage sketch and add it to the design brief.
 - Confirm Google Doc brief submission/sharing.
 - Mobile-friendly public live URL and GitHub repository link.
@@ -99,5 +109,7 @@ Matteo reviewed all three recordings and their descriptions. Preserve his final 
 - October 18: Built Contact with the five supplied destinations. Removed Instagram QR tracking parameters from its profile URL. Confirmed link targets, local navigation, keyboard focus, loaded fonts, and desktop/390px/320px layouts without horizontal overflow. Added only a Contact navigation link to Home and Performances; their content is unchanged. Contact remains an uncommitted, unpublished draft for review.
 - October 18: Added Maya's video, August 15, 2025 performance date, collaborators, instrumentation, and camp context from its YouTube description. Removed its placeholder and unused placeholder styling. Confirmed embedded playback advances, phone layouts fit at 390px and 320px, and all three accessible embeds have fallback links. Verified Bach, Cui, Home, and Contact content stayed unchanged. Updated local preview remains uncommitted and unpublished for review.
 - October 18: Matteo approved the final Performances and Contact pages for commit and publication, including his requested wording revisions. Publication uses the existing main branch and docs/ folder, preserving the custom domain and existing assets. Current site URL: https://matteobotelho.com/.
+- October 18: Built Beyond the Flute locally with the single “Wondering” video and details from its description. Added the fourth navigation link to all pages and a two-column phone menu. Checked playback, skip-link keyboard access, local navigation, loaded fonts, and layouts at 1280px, 820px, 390px and 320px without horizontal overflow. Existing page content is unchanged apart from navigation. Matteo must review this draft before any commit or publication.
+- October 18: Matteo approved committing and publishing Beyond the Flute after removing its heading eyebrow. Publish it with the shared four-page navigation and responsive styles through the existing GitHub Pages setup. Page URL: https://matteobotelho.com/beyond-the-flute.html.
 - Matteo chose a new public GitHub repository named matteo-botelho-flute under ThatPie: https://github.com/ThatPie/matteo-botelho-flute.
 - Home/About is live at https://thatpie.github.io/matteo-botelho-flute/. GitHub Pages publishes docs/ from main. Desktop, 390px and 320px live-page checks passed; the portrait and fonts load, and both navigation links work. All 14 uploaded files matched the local files byte for byte. Stage 1 is complete; Performances and Contact remain future work.
